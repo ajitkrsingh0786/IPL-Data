@@ -1,13 +1,16 @@
 package implement;
 
+import com.sun.source.tree.Tree;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class MatchesWonByEachTeam {
       public void matchesWonByEachTeam() throws IOException {
-            HashMap<String, Integer> match_won_by_each_teams = new HashMap<String ,Integer>();
+            TreeMap<String, Integer> match_won_by_each_teams = new TreeMap<String, Integer>();
             String line = "";
             String file_path = "./resources/matches.csv";// write your code here
             BufferedReader br = new BufferedReader(new FileReader(file_path));
@@ -28,6 +31,5 @@ public class MatchesWonByEachTeam {
                   int match_won = match_won_by_each_teams.get(team);
                   System.out.println("Total number of  matches won by "+ team + " is : " + match_won);
             }
-
       }
 }

@@ -4,10 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class ExtraRunsConceded {
     public void extraRunConcededByEachTeam() throws IOException {
-        HashMap<String, Integer> extra_run_conceded_in_2016 = new HashMap<String ,Integer>();
+        TreeMap<String, Integer> extra_run_conceded_in_2016 = new TreeMap<String ,Integer>();
         HashMap<String, Integer> match_id = new HashMap<String ,Integer>();
         String line = "";
         String file_path = "./resources/matches.csv";

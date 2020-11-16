@@ -14,7 +14,7 @@ public class Main {
                 "Enter 3 to see the total extra runs conceded by each team in 2016\n" +
                 "Enter 4 to see the top 10 economical bowlers in 2015\n" +
                 "Enter 5 to see the top 10 high scorers batsman in the given year");
-        
+
          int i = sc.nextInt();
          switch (i) {
              case 1:
